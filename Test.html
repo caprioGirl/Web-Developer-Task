@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <title></title>
+    <style>
+        .carousel-caption {
+            text-align: left;
+        }
+        /* Caption text */
+        .text {
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 50px;
+            width: 30%;
+            -webkit-animation-name: slide;
+            -webkit-animation-duration: 1.5s;
+            animation-name: slide;
+            animation-duration: 1.5s;
+        }
+
+        /* Caption paragraph */
+        .subtext {
+            color: #ffffff;
+            font-size: 8px;
+            position: absolute;
+            padding: 8px 12px;
+            bottom: 15px;
+            width: 30%;
+            -webkit-animation-name: slidep;
+            -webkit-animation-duration: 1.5s;
+            animation-name: slidep;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes slide {
+            0% {
+                left: 0;
+                bottom: 30px;
+            }
+
+            100% {
+                bottom: 50px;
+            }
+        }
+
+        @keyframes slidep {
+            0% {
+                left: 0;
+                bottom: 0px;
+            }
+
+            100% {
+                bottom: 15px;
+            }
+        }
+
+
+        .pos-r {
+            position: relative !important;
+        }
+
+        .container{
+            position:absolute;
+            top:0;
+            right:0;
+            left:32%;
+        }
+        .white {
+            background: #fff;
+        }
+
+        .text-gray {
+            color: #363636;
+        }
+
+        .testimonial {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .separator {
+            width: 14%;
+            height: 3px;
+            margin: 1.2em auto 1em;
+            background: #ffc53a;
+        }
+
+        .one-slide {
+            border-radius: 3px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            font-size: 1.1rem;
+            height: 400px;
+        }
+
+            .one-slide img {
+                width: 60%;
+            }
+
+        .carousel-controls .control {
+            position: absolute;
+            cursor: pointer;
+            top: 56.4%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .prev {
+            left: -1.875rem;
+        }
+
+        .next {
+            right: -1.875rem;
+        }
+
+        .testimonial-carousel
+        {
+            display: block;
+        }
+
+        .message {
+            width: 100%;
+            font-size: .9rem;
+        }
+
+        .brand {
+            width: 100%;
+            
+        }
+        .mx-auto {
+            border-radius: 5px;
+        }
+        .slick-current {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 2s;
+            animation-name: zoom;
+            animation-duration: 2s;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform:scaleY(1);
+            }
+
+            100% {
+                transform: scaleY(2);
+            }
+        }
+
+        @media (max-width: 575px) {
+            .one-slide {
+                height: 200px;
+            }
+
+            img {
+                width: 40%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets\images\img_mountains.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="text">INDONESIA</h3>
+                    <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nunc nec neque dictum consectetur sed non odio. Nulla facilisi.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets\images\img_sea.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="text">BALI</h3>
+                    <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nunc nec neque dictum consectetur sed non odio. Nulla facilisi.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets\images\img_snow.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="text">THAILAND</h3>
+                    <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nunc nec neque dictum consectetur sed non odio. Nulla facilisi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="mt-5 pos-r">
+                    <div class="carousel-controls testimonial-carousel-controls">
+                        <div class="control prev"><i class="fa fa-chevron-left">&nbsp;</i></div>
+                        <div class="control next"><i class="fa fa-chevron-right">&nbsp;</i></div>
+                    </div>
+                    <div class="testimonial-carousel">
+                        <div class="one-slide">
+                            <div class="testimonial w-100 h-100  p-3 text-center">
+                                <div class="brand"><img src="assets\images\img_mountains.jpg" class="mx-auto" /></div>
+                            </div>
+                        </div>
+                        <div class="one-slide">
+                            <div class="testimonial w-100 h-100  p-3 text-center">
+                                <div class="brand"><img src="assets\images\img_sea.jpg" class="mx-auto" /></div>
+                            </div>
+                        </div>
+                        <div class="one-slide ">
+                            <div class="testimonial w-100 h-100  p-3 text-center">
+                                <div class="brand"><img src="assets\images\img_snow.jpg" class="mx-auto" /></div>
+                            </div>
+                        </div>
+                        <div class="one-slide ">
+                            <div class="testimonial w-100 h-100  p-3 text-center">
+                                <div class="brand"><img src="assets\images\img_car.jpg" class="mx-auto" /></div>
+                            </div>
+                        </div>
+                        <div class="one-slide ">
+                            <div class="testimonial w-100 h-100  p-3 text-center">
+                                <div class="brand"><img src="assets\images\img_sun.jpg" class="mx-auto" /></div>
+                            </div>
+                        </div>
+                        <div class="one-slide ">
+                            <div class="testimonial w-100 h-100  p-3 text-center">
+                                <div class="brand"><img src="assets\images\img_test.jpg" class="mx-auto" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+        $(document).ready(function () {
+            $(".testimonial-carousel").slick({
+                infinite: !0,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: 1,
+                arrows: true,
+                SVGZoomAndPan: true,
+                prevArrow: $(".testimonial-carousel-controls .prev"),
+                nextArrow: $(".testimonial-carousel-controls .next"),
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }, {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }]
+            });
+        });
+    </script>
+</body>
+</html >
